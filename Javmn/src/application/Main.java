@@ -1,0 +1,69 @@
+package application;	
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
+import javafx.scene.text.Text;
+import javafx.scene.shape.Line;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Polygon;
+
+public class Main extends Application {
+	@Override
+	public void start(Stage primaryStage) {
+		try {
+			BorderPane root = new BorderPane();
+			//root.setMinSize(200, 200);		
+			Scene scene = new Scene(root,400,400,Color.GRAY);
+			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			primaryStage.setScene(scene);
+			primaryStage.setTitle("hello world");
+			primaryStage.setX(30);
+			primaryStage.setY(70);
+			Text text=new Text();
+			text.setText("welcome");
+			text.setX(50);
+			text.setY(50);
+			text.setFill(Color.BLACK);
+			Font font=new Font("VERDANA",50);
+			text.setFont(font);
+			Line line=new Line();
+			line.setStartX(20);
+			line.setStartY(80);
+			line.setEndX(100);
+			line.setEndY(80);
+			line.setStrokeWidth(5);
+			line.setStroke(Color.BLUEVIOLET);
+			line.setRotate(45);
+			Rectangle rectangle=new Rectangle();
+			rectangle.setX(120);
+			rectangle.setY(120);
+			rectangle.setWidth(100);
+			rectangle.setHeight(100);
+			rectangle.setFill(Color.CHOCOLATE);
+			rectangle.setStrokeWidth(5);
+			rectangle.setStroke(Color.BLUE);
+			Polygon triangle=new Polygon();
+			triangle.getPoints().setAll(200.0,200.0,
+					300.0,300.0,
+					200.0,300.0);
+			triangle.setFill(Color.AQUAMARINE);
+//			root.getChildren().add(triangle);
+//			root.getChildren().add(rectangle);
+//			root.getChildren().add(text);
+//			root.getChildren().add(line);
+			root.getChildren().addAll(triangle,rectangle,text,line);
+			primaryStage.setResizable(true);
+			primaryStage.show();
+			//primaryStage.setFullScreen(true);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

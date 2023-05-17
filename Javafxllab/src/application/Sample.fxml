@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <AnchorPane prefHeight="508.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="Mylogin" layoutX="407.0" layoutY="331.0" mnemonicParsing="false" styleClass="btn" text="Login" />
+            <Button fx:id="mycancel" layoutX="500.0" layoutY="331.0" mnemonicParsing="false" styleClass="btn" text="Cancel" />
+            <Label text="Label" />
+            <Label layoutX="428.0" layoutY="53.0" prefHeight="25.0" prefWidth="63.0" styleClass="title" text="Login" />
+            <Label layoutX="445.0" layoutY="112.0" prefHeight="25.0" prefWidth="63.0" styleClass="labe" text="Username" />
+            <TextField fx:id="tfUser" layoutX="385.0" layoutY="144.0" />
+            <Label layoutX="445.0" layoutY="192.0" styleClass="labe" text="Password" />
+            <Label id="lblError" fx:id="lblError" layoutX="419.0" layoutY="262.0" styleClass="labe" />
+            <PasswordField fx:id="pfPass" layoutX="385.0" layoutY="210.0" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="508.0" fitWidth="234.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Pictures/bdrlogo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

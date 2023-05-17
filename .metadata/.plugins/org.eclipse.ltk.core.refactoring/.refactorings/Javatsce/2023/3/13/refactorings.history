@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Sample.fxml&apos; to &apos;Trope/src&apos;&#x0D;&#x0A;- Original project: &apos;Javatsce&apos;&#x0D;&#x0A;- Destination element: &apos;Trope/src&apos;&#x0D;&#x0A;- Original element: &apos;Sample.fxml&apos;" description="Copy file" destination="=Trope/src" element1="src/application/Sample.fxml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1680281836655" units="0" version="1.0"/>
+</session>

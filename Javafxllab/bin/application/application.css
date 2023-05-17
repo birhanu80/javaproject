@@ -1,0 +1,37 @@
+.root{
+	-fx-background-color:#000000;
+}
+.title{
+	-fx-font-size:25px;
+	-fx-text-fill:#ff0000;
+}
+.btn{
+-fx-font-size: 16px;
+-fx-background-color:#0275d8;
+}
+.labe{
+-fx-font-size: 12px;	
+-fx-text-fill:#0000ff;	
+}
+.header{
+	-fx-background-color:blue; 
+}
+.Student{
+-fx-text-fill:#ffffff;	
+}
+.welcome{-fx-text-fill:#ffffff;}
+.Addstu{
+	-fx-background-color:#5cb85c;
+}
+.update{
+-fx-background-color:#5bc0de;	
+}
+.search{
+-fx-background-color:#0275d8;	
+}
+.delete{
+	-fx-background-color:#d9534f;
+}
+.logout{
+	-fx-background-color:#f0ad4e;
+}
